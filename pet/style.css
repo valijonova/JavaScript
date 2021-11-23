@@ -1,0 +1,87 @@
+/*Fonts*/
+@font-face {
+  font-family: "IBM-Plex-Sens-Regular";
+  src: url(./fonts/IBMPlexSans-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM-Plex-Sens-Semi-bold";
+  src: url(./fonts/IBMPlexSans-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+/*Global properties*/
+.container choose_film{
+  width: 1124px;
+  box-sizing: border-box;
+  padding: 0 138px;
+}
+
+/*Table*/
+
+.table_head {
+  font-family: "IBM-Plex-Sens-Semi-bold";
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  background: #a3cc40;
+  color: #ffff;
+  text-align: left;
+  height: 45px;
+}
+#t_body {
+  font-family: "IBM-Plex-Sens-Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14.2px;
+  color: #ffff;
+}
+
+/*Убран collapse, чтобы скругления работали*/
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/*Стили для скруглений таблицы*/
+th.check {
+  border-radius: 10px 0 0 0;
+}
+th.cell_genre {
+  border-radius: 0 10px 0 0;
+}
+tbody tr:last-child td.cell_genre {
+  border-radius: 0 0 10px 0;
+}
+tbody tr:last-child td.check {
+  border-radius: 0 0 0 10px;
+}
+
+/*Выставлена ширина по px, адаптив с % потом*/
+.check {
+  width: 77px;
+}
+.cell_session {
+  width: 234px;
+}
+.cell_film_name {
+  width: 240px;
+}
+.cell_genre {
+  width: 287px;
+}
+
+.check svg {
+  padding-left: 24px;
+}
+.first_row {
+  background-color: #373737;
+  height: 45px;
+}
+.second_row {
+  background-color: #4c4d4f;
+  height: 45px;
+}
