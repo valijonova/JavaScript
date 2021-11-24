@@ -1,7 +1,7 @@
 /*Fonts*/
 @font-face {
   font-family: "IBM-Plex-Sans";
-  src: url(../fonts/IBMPlexSans-Regular.ttf);
+  src: url(./fonts/IBMPlexSans-Medium.ttf);
   font-weight: 500;
 }
 @font-face {
@@ -73,7 +73,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 41.75rem;
-  width: 100%;
 }
 
 .header::after {
@@ -324,6 +323,7 @@ tbody tr:last-child td.check {
 
 .cell_session {
   width: 14.625rem;
+  padding: 10px;
 }
 
 .cell_film_name {
